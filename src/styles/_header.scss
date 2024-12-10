@@ -1,0 +1,24 @@
+@use "globals" as *;
+
+header {
+    @include grid;
+    padding-top: 3rem;
+    align-items: center;
+
+    nav {
+        grid-column: 5/13;
+        justify-self: end;
+
+        ul {
+
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            color: $primary;
+
+            li {
+                padding-left: 8rem;
+            }
+        }
+    }
+}
