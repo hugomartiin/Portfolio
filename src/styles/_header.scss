@@ -26,6 +26,10 @@ header {
             list-style: none;
 
             li {
+                @include respond-to("small") {
+                    padding-left: 1rem;
+                }
+
                 padding-left: 8rem;
 
                 a {

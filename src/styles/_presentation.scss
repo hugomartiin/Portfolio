@@ -2,30 +2,68 @@
 
 .presentation {
     text-align: center;
+
+    @include respond-to("small") {
+        padding: 1rem 3rem;
+
+    }
+
     padding: 5rem 21rem;
+
+    h1 {
+        @include respond-to("small") {
+            @include header3;
+
+        }
+    }
 
     h2 {
         span {
             color: $secondary;
         }
 
+        @include respond-to("small") {
+            @include subtitle;
+
+        }
+
         padding-bottom:1.3rem;
     }
 
     h3 {
+        @include respond-to("small") {
+            @include bold;
+
+        }
+
         color: $primary;
         padding-top: 1.3rem;
     }
 
     .icons {
         @include grid;
+
+        @include respond-to("small") {
+            @include grid2;
+
+        }
+
         padding-top: 5rem;
 
         a:nth-child(1) {
             color: $white;
             grid-column: 5;
 
+            @include respond-to("small") {
+                grid-column: 1;
+                font-size: 30px;
+            }
+
             i {
+                @include respond-to("small") {
+                    font-size: 30px;
+                }
+
                 font-size: 60px;
             }
         }
@@ -34,9 +72,18 @@
             color: $white;
             grid-column: 6/8;
 
+            @include respond-to("small") {
+                grid-column: 3/5;
+
+            }
+
             justify-self: center;
 
             i {
+                @include respond-to("small") {
+                    font-size: 30px;
+                }
+
                 font-size: 60px;
             }
         }
@@ -45,7 +92,16 @@
             color: $white;
             grid-column: 8;
 
+            @include respond-to("small") {
+                grid-column: 6;
+
+            }
+
             i {
+                @include respond-to("small") {
+                    font-size: 30px;
+                }
+
                 font-size: 60px;
             }
         }
