@@ -72,3 +72,23 @@ p {
 .small-text {
     @include small;
 }
+
+.subtitle {
+    @include subtitle;
+}
+
+.bold {
+    @include bold;
+}
+
+.primary {
+    color: $primary;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.terciary {
+    color: $terciary;
+}
