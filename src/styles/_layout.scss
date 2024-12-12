@@ -48,6 +48,10 @@ body {
     opacity: 1;
 }
 
+a {
+    text-decoration: none;
+    color: $white;
+}
 
 h1 {
     @include header1;
@@ -91,4 +95,40 @@ p {
 
 .terciary {
     color: $terciary;
+}
+
+
+
+
+//Scroll bar 
+/* Para Chrome, Safari y Edge */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Ajusta el ancho si lo deseas */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    /* Barra de desplazamiento negra */
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+    /* Fondo de la barra también negro */
+}
+
+/* Para Firefox */
+scrollbar {
+    width: 12px;
+    /* Ajusta el ancho si lo deseas */
+}
+
+scrollbar-thumb {
+    background-color: #000;
+    /* Barra de desplazamiento negra */
+}
+
+scrollbar-track {
+    background: #000;
+    /* Fondo de la barra también negro */
 }

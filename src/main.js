@@ -1,12 +1,8 @@
 import "./styles/main.scss";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+import Typed from 'typed.js';
 
 document.addEventListener("DOMContentLoaded", event => {
-    AOS.init();
-    //    duration: 1000,
-    //    once: true,
-    //});
 
     changeHTML("presentacion")
 
@@ -21,7 +17,38 @@ document.addEventListener("DOMContentLoaded", event => {
 
     const butonCambiarPresentacion = document.querySelectorAll(".cambiarPresentacion");
     butonCambiarPresentacion.forEach(button => button.addEventListener("click", e => changeHTML("presentacion")));
+
+    new Typed('.huge-text.hugo', {
+        strings: ['Hugo'],
+        typeSpeed: 50,
+        showCursor: false,
+        loop: false,
+        onComplete: () => {
+            new Typed('.huge-text.martin', {
+                strings: ['Martin'],
+                typeSpeed: 50,
+                showCursor: false,
+                loop: false,
+            });
+        },
+    });
+
+
+    new Typed('#typed-description', {
+        strings: [
+            "I’m a 2nd-year Web Development student (DAW) and passionate about web development. Here, I share my projects, learnings, and progress as I explore the world of programming. Thank you for visiting!"
+        ],
+        typeSpeed: 30,
+        startDelay: 1500,
+        showCursor: false,
+        loop: false,
+    });
+
 });
+
+
+
+
 
 
 
@@ -40,7 +67,4 @@ function changeHTML(id) {
     if (paginaAMostrar.classList.contains("d-none"))
         paginaAMostrar.classList.remove("d-none");
     paginaAMostrar.classList.add("d-block");
-    // setTimeout(() => {
-    AOS.refresh();
-    // }, 100);
 }
