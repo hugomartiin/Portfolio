@@ -37,6 +37,18 @@ body {
     color: $white;
 }
 
+.d-none {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.d-block {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 h1 {
     @include header1;
 }

@@ -1,0 +1,53 @@
+@use "globals" as *;
+
+.presentation {
+    text-align: center;
+    padding: 5rem 21rem;
+
+    h2 {
+        span {
+            color: $secondary;
+        }
+
+        padding-bottom:1.3rem;
+    }
+
+    h3 {
+        color: $primary;
+        padding-top: 1.3rem;
+    }
+
+    .icons {
+        @include grid;
+        padding-top: 5rem;
+
+        a:nth-child(1) {
+            color: $white;
+            grid-column: 5;
+
+            i {
+                font-size: 60px;
+            }
+        }
+
+        a:nth-child(2) {
+            color: $white;
+            grid-column: 6/8;
+
+            justify-self: center;
+
+            i {
+                font-size: 60px;
+            }
+        }
+
+        a:nth-child(3) {
+            color: $white;
+            grid-column: 8;
+
+            i {
+                font-size: 60px;
+            }
+        }
+    }
+}
