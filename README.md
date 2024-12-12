@@ -2,6 +2,10 @@
 
 > S2DAW Diseño Web
 > Autor: Hugo Martín
+> 
+## 1. Descripción
+
+Aqui esta mi portfolio. Donde podras encontrar informacion sobre mi, contacto y mis mas recientes proyectos.
 
 ## Enlace a la página en GitHub Pages
 
