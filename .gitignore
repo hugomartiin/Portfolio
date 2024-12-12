@@ -1,5 +1,13 @@
 #Ignorar todo
 /*
+# Ignorar la carpeta "src"
+src/
+
+# Ignorar el archivo package-lock.json
+package-lock.json
+
+# Ignorar el archivo package.json
+package.json
 
 # No ignorar docs
 !docs/
