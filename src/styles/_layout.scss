@@ -1,0 +1,134 @@
+@use "globals" as *;
+
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter-Medium.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter-Bold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter-ExtraBold.woff2);
+    font-weight: 700;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    box-sizing: border-box;
+    background-image: url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: $white;
+}
+
+.d-none {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+
+.d-block {
+    visibility: visible;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+h1 {
+    @include header1;
+}
+
+h2 {
+    @include header2;
+}
+
+h3 {
+    @include header3;
+}
+
+.huge-text {
+    @include huge;
+}
+
+p {
+    @include body;
+}
+
+.small-text {
+    @include small;
+}
+
+.subtitle {
+    @include subtitle;
+}
+
+.bold {
+    @include bold;
+}
+
+.primary {
+    color: $primary;
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.terciary {
+    color: $terciary;
+}
+
+
+
+
+//Scroll bar 
+/* Para Chrome, Safari y Edge */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Ajusta el ancho si lo deseas */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    /* Barra de desplazamiento negra */
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+    /* Fondo de la barra también negro */
+}
+
+/* Para Firefox */
+scrollbar {
+    width: 12px;
+    /* Ajusta el ancho si lo deseas */
+}
+
+scrollbar-thumb {
+    background-color: #000;
+    /* Barra de desplazamiento negra */
+}
+
+scrollbar-track {
+    background: #000;
+    /* Fondo de la barra también negro */
+}

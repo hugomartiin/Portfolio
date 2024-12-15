@@ -1,0 +1,47 @@
+@use "globals" as *;
+
+header {
+    @include grid;
+    padding-top: 3rem;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: $primary;
+    }
+
+    nav {
+        grid-column: 5/13;
+        justify-self: end;
+
+        ul {
+
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+
+            li {
+                @include respond-to("small") {
+                    padding-left: 1rem;
+                }
+
+                padding-left: 8rem;
+
+                a {
+                    text-decoration: none;
+                    color: $primary;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

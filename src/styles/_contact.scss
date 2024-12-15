@@ -1,0 +1,78 @@
+@use "globals" as *;
+
+.container-contact {
+    background-color: rgba($color: $black, $alpha: 0.3);
+    @include grid;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+
+    @include respond-to("small") {
+        @include grid2;
+    }
+
+    h2 {
+        grid-column: 2/13;
+
+        @include respond-to("small") {
+            @include header3;
+            grid-column: 1/6;
+        }
+    }
+
+    p {
+        padding-top: 1.2rem;
+        grid-column: 2/13;
+
+        @include respond-to("small") {
+            @include small;
+            grid-column: 1/6;
+        }
+    }
+
+    .icons {
+        padding-top: 5rem;
+        grid-column: 1/6;
+
+        a:nth-child(1) {
+            color: $white;
+
+            i {
+                @include respond-to("small") {
+                    font-size: 30px;
+                }
+
+                font-size: 60px;
+            }
+        }
+
+        a:nth-child(2) {
+            color: $white;
+            padding-left: 3rem;
+
+            i {
+                @include respond-to("small") {
+                    font-size: 30px;
+                    padding-left: -2rem;
+
+                }
+
+                font-size: 60px;
+            }
+        }
+
+        a:nth-child(3) {
+            color: $white;
+            padding-left: 3rem;
+
+            i {
+                @include respond-to("small") {
+                    font-size: 30px;
+                    padding-left: -2rem;
+                }
+
+                font-size: 60px;
+            }
+        }
+    }
+}
